@@ -102,22 +102,3 @@ device-A99  site=site99
 
 [type-b]
 device-B0  site=site0
-device-B1  site=site1
-device-B2  site=site2
-device-B3  site=site3
-device-B4  site=site4
-device-B5  site=site5
-device-B6  site=site6
-device-B7  site=site7
-device-B8  site=site8
-device-B9  site=site9
-device-B10  site=site10
-device-B11  site=site11
-device-B12  site=site12
-device-B13  site=site13
-device-B14  site=site14
-device-B15  site=site15
-device-B16  site=site16
-device-B17  site=site17
-device-B18  site=site18
-device-B19  site=site19

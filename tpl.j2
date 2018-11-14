@@ -2,17 +2,8 @@
 
 
 {% for n in range(40) %}
-### UUID {{n}}
-{% for peer in groups['type-a'] %}
-    {{ hostvars[peer].uuid[0].keys() }}
-{% endfor %}
-
-{% endfor %}
-
-{% for n in range(40) %}
 ### SITE {{n}}
 {% for peer in groups['type-a'] %}
     {{ hostvars[peer].site }}
 {% endfor %}
-
 {% endfor %}
