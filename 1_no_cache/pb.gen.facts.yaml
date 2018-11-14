@@ -1,0 +1,15 @@
+
+- name: Generate Facts for All devices
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: Gen Facts
+      local_action:
+        module: gen_facts
+      register: uuid
+
+    - name: Save Facts in hostvars
+      local_action: 
+        module: copy
+        content: "{{ uuid.ansible_facts | to_nice_yaml }}" 
+        dest: "host_vars/{{inventory_hostname}}.yaml"

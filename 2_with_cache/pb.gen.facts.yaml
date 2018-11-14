@@ -1,0 +1,9 @@
+
+- name: Generate Facts for All devices
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: Gen Facts
+      local_action:
+        module: gen_facts
+      register: uuid

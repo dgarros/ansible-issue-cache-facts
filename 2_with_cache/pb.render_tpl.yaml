@@ -1,0 +1,10 @@
+
+- name: Render jinja template
+  hosts: type-b
+  gather_facts: no
+  tasks:
+    - name: Render vars
+      local_action:
+        module: template 
+        src: ../tpl.j2
+        dest: "output/{{inventory_hostname}}_site_uuid.txt"
